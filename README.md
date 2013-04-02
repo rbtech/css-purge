@@ -1,7 +1,7 @@
 css-purge
 =========
 
-A command line Node JS app for the removal of duplicate CSS rules and or properties in a .css file.
+A command line Node JS app built on [css-parse](https://github.com/visionmedia/css-parse) that allows you to remove duplicate CSS rules and or properties in a .css file.
 
 
 Usage
