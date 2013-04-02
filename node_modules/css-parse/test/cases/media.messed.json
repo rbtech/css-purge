@@ -1,0 +1,76 @@
+{
+  "stylesheet": {
+    "rules": [
+      {
+        "media": "screen, projection",
+        "rules": [
+          {
+            "selectors": [
+              "html"
+            ],
+            "declarations": [
+              {
+                "property": "background",
+                "value": "#fffef0"
+              },
+              {
+                "property": "color",
+                "value": "#300"
+              }
+            ]
+          },
+          {
+            "selectors": [
+              "body"
+            ],
+            "declarations": [
+              {
+                "property": "max-width",
+                "value": "35em"
+              },
+              {
+                "property": "margin",
+                "value": "0 auto"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "media": "print",
+        "rules": [
+          {
+            "selectors": [
+              "html"
+            ],
+            "declarations": [
+              {
+                "property": "background",
+                "value": "#fff"
+              },
+              {
+                "property": "color",
+                "value": "#000"
+              }
+            ]
+          },
+          {
+            "selectors": [
+              "body"
+            ],
+            "declarations": [
+              {
+                "property": "padding",
+                "value": "1in"
+              },
+              {
+                "property": "border",
+                "value": "0.5pt solid #666"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

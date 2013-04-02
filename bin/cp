@@ -1,0 +1,45 @@
+var fs = require('fs'),
+	program = require('commander'),
+	CSSPurge = require('../lib/css-purge');
+
+program
+	.version('1.0.0')
+	.option('-i, --input <filename>', '<filename>.css to be processed')
+	.option('-o, --output <filename>', '<filename>.css to be outputted')
+	.option('-d, --no-duplicate_property', 'allows duplicate properties to occur')
+	.option('-w, --no-watch', 'disable watching the input file for changes')
+	.option('-n, --watch_interval', 'the time between checking if the input file has changed', Number, 2000)
+	.option('-v, --verbose', 'output extra messages')
+	.parse(process.argv);
+
+if (program.input !== undefined && program.output !== undefined) {
+
+	if (!program.watch) {
+
+		var csspurge = new CSSPurge(program.input, program.output, {"verbose":program.verbose, "no_duplicate_property":program.duplicate_property});
+
+	} else {
+
+		var csspurge = new CSSPurge(program.input, program.output, {"verbose":program.verbose, "no_duplicate_property":program.duplicate_property});
+
+		if(program.verbose) {
+			console.log('Watching: ' + filenameIn);
+		}
+
+		fs.watchFile(CSSPurge.filenameIn, { persistent: true, interval: program.watch_interval }, function(curr,prev) {
+
+	    	if (curr.mtime.getTime() != prev.mtime.getTime()) {
+
+				var csspurge = new CSSPurge(program.input, program.output, {"verbose":program.verbose, "no_duplicate_property":program.duplicate_property});
+
+				if(program.verbose) {
+					console.log('Watching: ' + CSSPurge.filenameIn);
+				}
+	    	}
+		});
+	}
+
+} else {
+
+	console.log('You need to specify an input and output .css file');
+}

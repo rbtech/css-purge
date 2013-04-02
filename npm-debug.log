@@ -1,0 +1,148 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/n/versions/0.10.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@1.2.15
+3 info using node@v0.10.1
+4 verbose publish [ '.' ]
+5 verbose read json /Volumes/rbt/Lab/CSSDeDuplicator/production/one/package.json
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/Valkyrie/.npm/3a52ce78-.lock
+11 verbose read json package.json
+12 verbose tar pack [ '/var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/tmp.tgz',
+12 verbose tar pack   '.' ]
+13 verbose tarball /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/tmp.tgz
+14 verbose folder .
+15 info prepublish css-purge@1.0.0
+16 silly lockFile 3a52ce78- .
+17 verbose lock . /Users/Valkyrie/.npm/3a52ce78-.lock
+18 silly lockFile 30d2db04-065-0-031535987509414554-tmp-tgz /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/tmp.tgz
+19 verbose lock /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/tmp.tgz /Users/Valkyrie/.npm/30d2db04-065-0-031535987509414554-tmp-tgz.lock
+20 silly lockFile 3a52ce78- .
+21 silly lockFile 3a52ce78- .
+22 silly lockFile 30d2db04-065-0-031535987509414554-tmp-tgz /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/tmp.tgz
+23 silly lockFile 30d2db04-065-0-031535987509414554-tmp-tgz /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/tmp.tgz
+24 verbose tar unpack /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/tmp.tgz
+25 silly lockFile c7c8a35b-065-0-031535987509414554-package /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/package
+26 verbose lock /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/package /Users/Valkyrie/.npm/c7c8a35b-065-0-031535987509414554-package.lock
+27 silly lockFile 30d2db04-065-0-031535987509414554-tmp-tgz /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/tmp.tgz
+28 verbose lock /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/tmp.tgz /Users/Valkyrie/.npm/30d2db04-065-0-031535987509414554-tmp-tgz.lock
+29 silly gunzTarPerm modes [ '755', '644' ]
+30 silly gunzTarPerm extractEntry package.json
+31 silly gunzTarPerm extractEntry .npmignore
+32 silly gunzTarPerm extractEntry README.md
+33 silly gunzTarPerm extractEntry LICENSE
+34 silly gunzTarPerm extractEntry bin/cp
+35 silly gunzTarPerm extractEntry lib/css-purge.js
+36 verbose read json /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/package/package.json
+37 silly lockFile c7c8a35b-065-0-031535987509414554-package /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/package
+38 silly lockFile c7c8a35b-065-0-031535987509414554-package /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/package
+39 silly lockFile 30d2db04-065-0-031535987509414554-tmp-tgz /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/tmp.tgz
+40 silly lockFile 30d2db04-065-0-031535987509414554-tmp-tgz /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/tmp.tgz
+41 verbose from cache /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/package/package.json
+42 verbose tar pack [ '/Users/Valkyrie/.npm/css-purge/1.0.0/package.tgz',
+42 verbose tar pack   '/var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/package' ]
+43 verbose tarball /Users/Valkyrie/.npm/css-purge/1.0.0/package.tgz
+44 verbose folder /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/package
+45 silly lockFile c7c8a35b-065-0-031535987509414554-package /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/package
+46 verbose lock /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/package /Users/Valkyrie/.npm/c7c8a35b-065-0-031535987509414554-package.lock
+47 silly lockFile 1932d3c0--npm-css-purge-1-0-0-package-tgz /Users/Valkyrie/.npm/css-purge/1.0.0/package.tgz
+48 verbose lock /Users/Valkyrie/.npm/css-purge/1.0.0/package.tgz /Users/Valkyrie/.npm/1932d3c0--npm-css-purge-1-0-0-package-tgz.lock
+49 silly lockFile c7c8a35b-065-0-031535987509414554-package /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/package
+50 silly lockFile c7c8a35b-065-0-031535987509414554-package /var/folders/zz/1jg_2dsd4hv6qwn2z70x98w80000gn/T/npm-3790/1364918057065-0.031535987509414554/package
+51 silly lockFile 1932d3c0--npm-css-purge-1-0-0-package-tgz /Users/Valkyrie/.npm/css-purge/1.0.0/package.tgz
+52 silly lockFile 1932d3c0--npm-css-purge-1-0-0-package-tgz /Users/Valkyrie/.npm/css-purge/1.0.0/package.tgz
+53 silly lockFile 87a40b74-yrie-npm-css-purge-1-0-0-package /Users/Valkyrie/.npm/css-purge/1.0.0/package
+54 verbose lock /Users/Valkyrie/.npm/css-purge/1.0.0/package /Users/Valkyrie/.npm/87a40b74-yrie-npm-css-purge-1-0-0-package.lock
+55 silly lockFile 87a40b74-yrie-npm-css-purge-1-0-0-package /Users/Valkyrie/.npm/css-purge/1.0.0/package
+56 silly lockFile 87a40b74-yrie-npm-css-purge-1-0-0-package /Users/Valkyrie/.npm/css-purge/1.0.0/package
+57 verbose tar unpack /Users/Valkyrie/.npm/css-purge/1.0.0/package.tgz
+58 silly lockFile 87a40b74-yrie-npm-css-purge-1-0-0-package /Users/Valkyrie/.npm/css-purge/1.0.0/package
+59 verbose lock /Users/Valkyrie/.npm/css-purge/1.0.0/package /Users/Valkyrie/.npm/87a40b74-yrie-npm-css-purge-1-0-0-package.lock
+60 silly lockFile 1932d3c0--npm-css-purge-1-0-0-package-tgz /Users/Valkyrie/.npm/css-purge/1.0.0/package.tgz
+61 verbose lock /Users/Valkyrie/.npm/css-purge/1.0.0/package.tgz /Users/Valkyrie/.npm/1932d3c0--npm-css-purge-1-0-0-package-tgz.lock
+62 silly gunzTarPerm modes [ '755', '644' ]
+63 silly gunzTarPerm extractEntry package.json
+64 silly gunzTarPerm extractEntry .npmignore
+65 silly gunzTarPerm extractEntry README.md
+66 silly gunzTarPerm extractEntry LICENSE
+67 silly gunzTarPerm extractEntry bin/cp
+68 silly gunzTarPerm extractEntry lib/css-purge.js
+69 verbose read json /Users/Valkyrie/.npm/css-purge/1.0.0/package/package.json
+70 silly lockFile 87a40b74-yrie-npm-css-purge-1-0-0-package /Users/Valkyrie/.npm/css-purge/1.0.0/package
+71 silly lockFile 87a40b74-yrie-npm-css-purge-1-0-0-package /Users/Valkyrie/.npm/css-purge/1.0.0/package
+72 silly lockFile 1932d3c0--npm-css-purge-1-0-0-package-tgz /Users/Valkyrie/.npm/css-purge/1.0.0/package.tgz
+73 silly lockFile 1932d3c0--npm-css-purge-1-0-0-package-tgz /Users/Valkyrie/.npm/css-purge/1.0.0/package.tgz
+74 silly shasum updated bytes 4537
+75 info shasum c04701e4d1fa30357e3182a1d62f0e2aed6ad9a1
+75 info shasum /Users/Valkyrie/.npm/css-purge/1.0.0/package.tgz
+76 verbose from cache /Users/Valkyrie/.npm/css-purge/1.0.0/package/package.json
+77 verbose chmod /Users/Valkyrie/.npm/css-purge/1.0.0/package.tgz 644
+78 verbose chown /Users/Valkyrie/.npm/css-purge/1.0.0/package.tgz [ 501, 20 ]
+79 silly lockFile 3a52ce78- .
+80 silly publish { name: 'css-purge',
+80 silly publish   version: '1.0.0',
+80 silly publish   description: 'A command line Node JS app for the removal of duplicate CSS rules and or properties.',
+80 silly publish   keywords:
+80 silly publish    [ 'css',
+80 silly publish      'purge',
+80 silly publish      'stylesheet',
+80 silly publish      'duplicate',
+80 silly publish      'deduplicate',
+80 silly publish      'merge',
+80 silly publish      'unify',
+80 silly publish      'command',
+80 silly publish      'shell',
+80 silly publish      'watcher' ],
+80 silly publish   author: { name: 'Andrew Quan', email: 'AndrewQ@RedBlueprint.com' },
+80 silly publish   bin: { cp: './bin/cp' },
+80 silly publish   dependencies: { 'cli-color': '0.2.2', commander: '1.1.1', 'css-parse': '*' },
+80 silly publish   repository:
+80 silly publish    { type: 'git',
+80 silly publish      url: 'https://github.com/rbtech/css-purge/css-purge.git' },
+80 silly publish   readme: 'css-purge\n=========\n\nA command line Node JS app for the removal of duplicate CSS rules and or properties in a .css file.\n\n\nUsage\n-----\n\n    $ npm install css-purge -g\n    $ css-purge --help\n\nExample\n-----\n\t$ css-purge -i style.css -o style_purged.css\n\n\nLicense\n-----\n\n(The MIT License)\n\nCopyright (c) 2012 Andrew Quan &lt;AndrewQ@RedBlueprint.com&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.',
+80 silly publish   readmeFilename: 'README.md',
+80 silly publish   _id: 'css-purge@1.0.0',
+80 silly publish   dist: { shasum: 'c04701e4d1fa30357e3182a1d62f0e2aed6ad9a1' },
+80 silly publish   _from: '.' }
+81 verbose url raw css-purge
+82 verbose url resolving [ 'https://registry.npmjs.org/', './css-purge' ]
+83 verbose url resolved https://registry.npmjs.org/css-purge
+84 info trying registry request attempt 1 at 17:54:27
+85 http PUT https://registry.npmjs.org/css-purge
+86 http 409 https://registry.npmjs.org/css-purge
+87 verbose url raw css-purge
+88 verbose url resolving [ 'https://registry.npmjs.org/', './css-purge' ]
+89 verbose url resolved https://registry.npmjs.org/css-purge
+90 info trying registry request attempt 1 at 17:54:34
+91 http GET https://registry.npmjs.org/css-purge
+92 http 200 https://registry.npmjs.org/css-purge
+93 error publish fail Cannot publish over existing version.
+93 error publish fail Update the 'version' field in package.json and try again.
+93 error publish fail
+93 error publish fail If the previous version was published in error, see:
+93 error publish fail     npm help unpublish
+93 error publish fail
+93 error publish fail To automatically increment version numbers, see:
+93 error publish fail     npm help version
+94 error System Darwin 12.3.0
+95 error command "/usr/local/n/versions/0.10.1/bin/node" "/usr/local/bin/npm" "publish"
+96 error cwd /Volumes/rbt/Lab/CSSDeDuplicator/production/one
+97 error node -v v0.10.1
+98 error npm -v 1.2.15
+99 error code EPUBLISHCONFLICT
+100 verbose exit [ 1, true ]
