@@ -1,6 +1,8 @@
+#! /usr/bin/env node
+
 var fs = require('fs'),
 	program = require('commander'),
-	CSSPurge = require('../lib/css-purge');
+	CSSPurge = require('../lib/css_purge');
 
 program
 	.version('1.0.0')

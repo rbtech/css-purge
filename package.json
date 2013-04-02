@@ -4,11 +4,14 @@
   "description": "A command line Node JS app for the removal of duplicate CSS rules and or properties.",
   "keywords": ["css", "purge", "stylesheet", "duplicate", "deduplicate", "merge", "unify", "command", "shell", "watcher"],
   "author": "Andrew Quan <AndrewQ@RedBlueprint.com>",
-  "bin": { "cp": "./bin/cp" },
+  "main": "./bin/csspurge",
+  "bin": {
+    "csspurge": "./bin/csspurge" 
+  },
   "dependencies": {
-    "cli-color": "0.2.2",
-    "commander": "1.1.1",
-    "css-parse": "*"
+    "cli-color": ">= 0.2.2",
+    "commander": ">= 1.1.1",
+    "css-parse": ">= 1.1.0"
   },
   "repository": { "type": "git", "url": "https://github.com/rbtech/css-purge/css-purge.git" }
 }
