@@ -25,17 +25,17 @@ if (program.input !== undefined && program.output !== undefined) {
 		var csspurge = new CSSPurge(program.input, program.output, {"verbose":program.verbose, "no_duplicate_property":program.duplicate_property});
 
 		if(program.verbose) {
-			console.log('Watching: ' + filenameIn);
+			console.log('Watching: ' + program.input);
 		}
 
-		fs.watchFile(CSSPurge.filenameIn, { persistent: true, interval: program.watch_interval }, function(curr,prev) {
+		fs.watchFile(program.input, { persistent: true, interval: program.watch_interval }, function(curr,prev) {
 
 	    	if (curr.mtime.getTime() != prev.mtime.getTime()) {
 
 				var csspurge = new CSSPurge(program.input, program.output, {"verbose":program.verbose, "no_duplicate_property":program.duplicate_property});
 
 				if(program.verbose) {
-					console.log('Watching: ' + CSSPurge.filenameIn);
+					console.log('Watching: ' + program.input);
 				}
 	    	}
 		});
