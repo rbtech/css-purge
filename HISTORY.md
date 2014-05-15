@@ -1,4 +1,4 @@
-1.1.0 / 2014-05-15
+1.1.1 / 2014-05-15
 ===================
 
   * Added support for detecting duplicate properties apart from duplicate rules :)
