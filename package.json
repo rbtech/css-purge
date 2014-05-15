@@ -1,6 +1,6 @@
 {
   "name": "css-purge",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "A command line Node JS app for the removal of duplicate CSS rules and or properties.",
   "keywords": [
     "css",
@@ -12,7 +12,10 @@
     "unify",
     "command",
     "shell",
-    "watcher"
+    "watcher",
+    "duplicate css",
+    "duplicate rules",
+    "duplicate properties"
   ],
   "author": {
     "name": "Andrew Quan",
@@ -35,10 +38,10 @@
   "bugs": {
     "url": "https://github.com/rbtech/css-purge/issues"
   },
-  "_id": "css-purge@1.0.7",
+  "_id": "css-purge@1.1.0",
   "dist": {
     "shasum": "65c5273e8f9e2eb017a729c1a60c5f779d74e841"
   },
   "_from": "css-purge@",
-  "_resolved": "https://registry.npmjs.org/css-purge/-/css-purge-1.0.6.tgz"
+  "_resolved": "https://registry.npmjs.org/css-purge/-/css-purge-1.1.0.tgz"
 }

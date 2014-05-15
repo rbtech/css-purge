@@ -1,0 +1,181 @@
+/** 
+
+Will use this from now on as a test stylesheet. 
+
+If I missed something out or you would like me to add something in to test, 
+just add an issue on github : https://github.com/rbtech/css-purge/issues
+
+**/
+
+/* 
+	Please note, the commented symbols below, 
+	I'm just pointing out which properties are duplicate and different.
+	You shouldn't include these commented symbols in your stylesheets, lol.
+
+	- denotes a duplicate rule
+	+ denotes a different rule
+ */
+
+
+.something {
+
+	color: #aaa; /* - */
+}
+
+.something {
+
+	color: #ffffff;
+}
+
+.something-again {
+
+	color: #aaa; /* - */
+	padding: 10px; /* + */
+}
+
+.something-again {
+
+	color: #CCC;
+	background-color: #FFFFFF; /* + */
+}
+
+.something-more-again {
+
+	display: inline-block; /* - */
+	position: relative; /* - */
+	top: 100px; /* + */
+	left: 50%; /* - */
+	bottom: 70px; /* + */
+	width: 500px; /* - */
+	height: 500px; /* - */
+}
+
+.something-more-again {
+
+	display: block; /* - */
+	position: absolute; /* - */
+	left: 300px; /* - */
+	right: 300px; /* - */
+}
+
+.something-more-again {
+
+	display: table;
+	position: absolute;
+	left: 700px;
+	right: 700px;
+	width: 100%;
+	height: 100%;
+	color: #eee;
+	background-color: #333;
+}
+
+
+/* 
+
+	From: https://github.com/rbtech/css-purge/issues/3 
+	By: https://github.com/bartkusa
+	
+*/
+
+.test {
+    color: red; /* - */
+    color: blue; /* - */
+    font-weight: bold; /* + */
+}
+.test2 {
+    color: green; /* - */
+}
+.test2 {
+    color: green; /* - */
+    color: green; 
+}
+.test {
+    color: purple;
+}
+.invalidProperties {
+    invalid:property;
+}
+
+
+/* From: http://css-tricks.com/css-media-queries/ */
+#sidebar ul li a {
+  color: #900;
+  text-decoration: none;
+  padding: 3px 0; 
+  display: block;
+}
+
+@media all and (min-width: 1001px) {
+  #sidebar ul li a:after {
+    content: " (" attr(data-email) ")"; /* - */
+    font-size: 11px; /* - */
+    font-style: italic; /* - */
+    color: #666; /* - */
+    background-color: #ABCDEF; /* + */
+  }
+
+  #sidebar ul li a:after {
+    content: " (" attr(data-email) ")";
+    font-size: 11px;
+    font-style: italic;
+    color: #666;
+  }
+}
+
+@media all and (max-width: 1000px) and (min-width: 700px) {
+  #sidebar ul li a:before {
+    content: "Email: "; /* - */
+    font-style: italic; /* - */
+    color: #666; /* - */
+  }
+
+  #sidebar ul li a:before {
+    content: "Email: ";
+    font-style: italic;
+    color: #333;
+  }
+}
+
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+  #sidebar ul li a {
+    padding-left: 21px; /* - */
+    background: url(../images/email.png) left center no-repeat; /* - */
+  }
+
+  #sidebar ul li a {
+  	padding-left: 10px;
+    padding-right: 30px;
+    background: url(../images/email.png) right center no-repeat;
+  }
+}
+
+
+/* 	
+	From: https://github.com/rbtech/css-purge/issues/4 
+	By: https://github.com/thomas-rager
+*/
+@font-face { 
+  font-family: "AppFontSerif";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/corporateACondensedRegularItalic/corporateacon-regita-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/corporateACondensedRegularItalic/corporateacon-regita-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AppFontSerif";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/corporateACondensedRegular/corporateacon-reg-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/corporateACondensedRegular/corporateacon-reg-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AppFontSerif";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/corporateARegularItalic/corporatea-regita-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/corporateARegularItalic/corporatea-regita-webfont.ttf") format("truetype");
+}
+

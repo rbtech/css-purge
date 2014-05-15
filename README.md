@@ -4,15 +4,33 @@ css-purge
 A command line Node JS app built on [css-parse](https://github.com/visionmedia/css-parse) that allows you to remove duplicate CSS rules and or properties in a .css file.
 
 
-Usage
+Install
 -----
 
     $ npm install css-purge -g
+
+
+Usage
+-----
+
+	$ css-purge -i style.css -o style_purged.css
+
+
+Help
+-----
+
     $ css-purge --help
 
-Example
+
+
+For CSS-Purge Devs
 -----
-	$ css-purge -i style.css -o style_purged.css
+	
+	1. Install dependencies
+	$ npm install
+
+	2. Local execution
+	$ node bin/css-purge -i style.css -o style_purged.css
 
 
 License

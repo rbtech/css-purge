@@ -1,0 +1,94 @@
+
+
+.something {
+	color: #ffffff;
+}
+.something-again {
+	color: #CCC;
+	padding: 10px;
+	background-color: #FFFFFF;
+}
+.something-more-again {
+	display: table;
+	position: absolute;
+	top: 100px;
+	left: 700px;
+	bottom: 70px;
+	width: 100%;
+	height: 100%;
+	right: 700px;
+	color: #eee;
+	background-color: #333;
+}
+
+.test {
+	color: purple;
+	font-weight: bold;
+}
+.test2 {
+	color: green;
+}
+.invalidProperties {
+	invalid: property;
+}
+
+#sidebar ul li a {
+	color: #900;
+	text-decoration: none;
+	padding: 3px 0;
+	display: block;
+}
+
+@media all and (min-width: 1001px) {
+
+	#sidebar ul li a:after {
+		content: " (" attr(data-email) ")";
+		font-size: 11px;
+		font-style: italic;
+		color: #666;
+		background-color: #ABCDEF;
+	}
+}
+
+
+@media all and (max-width: 1000px) and (min-width: 700px) {
+
+	#sidebar ul li a:before {
+		content: "Email: ";
+		font-style: italic;
+		color: #333;
+	}
+}
+
+
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+
+	#sidebar ul li a {
+		padding-left: 10px;
+		background: url(../images/email.png) right center no-repeat;
+		padding-right: 30px;
+	}
+}
+
+
+@font-face {
+	font-family: "AppFontSerif";
+	font-style: italic;
+	font-weight: normal;
+	src: url("../fonts/corporateACondensedRegularItalic/corporateacon-regita-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/corporateACondensedRegularItalic/corporateacon-regita-webfont.ttf") format("truetype");
+}
+@font-face {
+	font-family: "AppFontSerif";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/corporateACondensedRegular/corporateacon-reg-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/corporateACondensedRegular/corporateacon-reg-webfont.ttf") format("truetype");
+}
+@font-face {
+	font-family: "AppFontSerif";
+	font-style: italic;
+	font-weight: normal;
+	src: url("../fonts/corporateARegularItalic/corporatea-regita-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/corporateARegularItalic/corporatea-regita-webfont.ttf") format("truetype");
+}
