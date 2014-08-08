@@ -33,6 +33,14 @@ For CSS-Purge Devs
 	$ node bin/css-purge -i style.css -o style_purged.css
 
 
+Plugins!
+-----
+If you're a plugin dev, just create an issue, then we'll add ya to the list.
+
+[Plugins List](https://github.com/rbtech/css-purge/wiki/Plugins)
+
+
+
 License
 -----
 
