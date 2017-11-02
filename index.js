@@ -1,2 +1,2 @@
 
-module.exports = require('./lib/css_purge');
+module.exports = require('./lib/css-purge');
