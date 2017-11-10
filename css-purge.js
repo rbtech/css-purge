@@ -12,7 +12,7 @@ var logoRed = clc.xterm(197);
 // var defaultOutputfilename = "default_output.css";
 
 program
-	.version('2.0.6')
+	.version('2.0.7')
 	.option('-c, --cssinput - CSS <the css>', 'The CSS to purge')
 	.option('-i, --input - CSS file(s) <input filenames, foldernames or url>', 'The CSS file(s) to parse')
 	.option('-m, --inputhtml - HTML file(s) <input html filenames, foldernames or url>', 'The HTML file(s) to parse for CSS')
