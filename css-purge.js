@@ -48,10 +48,11 @@ if (program.cssinput) {
 		program.inputhtml, 
 		{
 			file_output: program.output,
+			trim : true,
 			shorten : true,
 			special_reduce_with_html: true
 		}, 
-		'' + (program.customconfig) ? program.customconfig : ''
+		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
 	);
 
 
@@ -61,10 +62,11 @@ if (program.cssinput) {
 		program.inputhtml, 
 		{
 			file_output: program.input.substr(0, program.input.lastIndexOf('.')) + '.min.css',
+			trim : true,
 			shorten : true,
 			special_reduce_with_html: true
 		}, 
-		'' + (program.customconfig) ? program.customconfig : ''
+		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
 	);
 
 
@@ -74,19 +76,22 @@ if (program.cssinput) {
 		null, 
 		{
 			file_output: program.output,
+			trim : true,
 			shorten : true,
 		}, 
-		'' + (program.customconfig) ? program.customconfig : ''
+		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
 	);
 } else if (program.input) {
+
 	cssPurge.purgeCSSFiles(
 		program.input, 
 		null, 
 		{
 			file_output: program.input.substr(0, program.input.lastIndexOf('.')) + '.min.css',
+			trim : true,
 			shorten : true,
 		}, 
-		'' + (program.customconfig) ? program.customconfig : ''
+		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
 	);
 } else if (program.customconfig) {
 	cssPurge.purgeCSSFiles(null, null, null, '' + program.customconfig);
