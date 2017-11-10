@@ -72,7 +72,7 @@ code {
   position: fixed;
   display: inline-block;
   width: 120px;
-  margin-top: -220px;
+  margin-top: -160px;
 
   background-color: white;
   border-radius: 4px;
@@ -294,7 +294,7 @@ code {
 }
 .cs__blurb {
   text-align: left;
-  font-size: 1.9em;
+  font-size: 1.3em;
   line-height: 1.4;
   margin-bottom: 10px;
   display: block;
