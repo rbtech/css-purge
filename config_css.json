@@ -2,9 +2,9 @@
 	"options": {
         "file_output": "purged.min.css",
 
-        "input_files": "demo/html/static-jekyll/_site/assets/main.css",
+        "input_files": "demo/test1.css",
         
-        "input_html_files": "demo/html/static-jekyll/_site",
+        "input_html_files": "demo/html/test1.html",
 
 		"trim": true,
         "trim_keep_non_standard_inline_comments": false,
