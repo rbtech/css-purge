@@ -12,13 +12,14 @@ var logoRed = clc.xterm(197);
 // var defaultOutputfilename = "default_output.css";
 
 program
-	.version('2.0.0')
+	.version('2.0.5')
 	.option('-c, --cssinput - CSS <the css>', 'The CSS to purge')
 	.option('-i, --input - CSS file(s) <input filenames, foldernames or url>', 'The CSS file(s) to parse')
 	.option('-m, --inputhtml - HTML file(s) <input html filenames, foldernames or url>', 'The HTML file(s) to parse for CSS')
 	.option('-o, --output - CSS file <output filename>', 'The new css filename to output as')
 	.option('-f, --customconfig - <config filename> - run with custom config filename', 'Global Workflow - All options must be defined in a json file')
 	.option('-d, --defaultconfig - run with default config file', 'Local Workflow - All options are defined in a config_css.json')
+	.option('-v, --verbose - displays internal messages', 'Outputs CSS-PURGE activity')
 	.parse(process.argv);
 
 
@@ -31,14 +32,14 @@ if (program.cssinput) {
 			file_output: program.output,
 			trim : true,
 			shorten : true,
-			verbose : false
+			verbose : (program.verbose) ? true : false
 		})
 	} else {
 		cssPurge.purgeCSS(program.cssinput, {
 			file_output: 'purged.min.css',
 			trim : true,
 			shorten : true,
-			verbose : false
+			verbose : (program.verbose) ? true : false
 		})
 	}
 
@@ -50,7 +51,8 @@ if (program.cssinput) {
 			file_output: program.output,
 			trim : true,
 			shorten : true,
-			special_reduce_with_html: true
+			special_reduce_with_html: true,
+			verbose : (program.verbose) ? true : false
 		}, 
 		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
 	);
@@ -64,7 +66,8 @@ if (program.cssinput) {
 			file_output: program.input.substr(0, program.input.lastIndexOf('.')) + '.min.css',
 			trim : true,
 			shorten : true,
-			special_reduce_with_html: true
+			special_reduce_with_html: true,
+			verbose : (program.verbose) ? true : false
 		}, 
 		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
 	);
@@ -78,6 +81,7 @@ if (program.cssinput) {
 			file_output: program.output,
 			trim : true,
 			shorten : true,
+			verbose : (program.verbose) ? true : false
 		}, 
 		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
 	);
@@ -90,6 +94,7 @@ if (program.cssinput) {
 			file_output: program.input.substr(0, program.input.lastIndexOf('.')) + '.min.css',
 			trim : true,
 			shorten : true,
+			verbose : (program.verbose) ? true : false
 		}, 
 		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
 	);
@@ -100,7 +105,3 @@ if (program.cssinput) {
 } else {
 	program.help();
 }
-
-
-//for require
-module.exports = cssPurge;
