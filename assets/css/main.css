@@ -45,6 +45,7 @@ html, body {
 #jumboName {
   display: none;
   color: #FF2F68;
+  font-size: 82px;
 }
 
 #mainDescription {
@@ -368,5 +369,16 @@ code {
   
   #code-sponsor-widget {
     display: none;
+  }
+}
+
+@media (max-width:580px) {
+  
+  #jumboName {
+    font-size: 40px;
+  }
+
+  #jumboName img {
+    width: 50px;
   }
 }
