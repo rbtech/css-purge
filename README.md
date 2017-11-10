@@ -1,8 +1,8 @@
 
-#CSS-PURGE
+CSS-PURGE
 =========
 
-**V2 - We just released our greatest version!**
+**V2 - We just released our greatest version yet!**
 
 # A CSS tool written in Node JS as a command line app or library for the purging, burning, reducing, shortening, compressing, cleaning, trimming and formatting of duplicate, extra, excess or bloated CSS.
 
@@ -12,7 +12,7 @@
 </a>
 
 
-## [Website - Where you can find all ya need to know](http://rbtech.github.io/css-purge)
+## [Official website - where you can find all ya need to know](http://rbtech.github.io/css-purge)
 
 
 Plugins!
