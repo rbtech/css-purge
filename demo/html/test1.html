@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS-Purge HTML Test</title>
+	
+	<link rel="stylesheet" href=""> <!-- Ignored -->
+	
+	<style type="text/css">
+	
+		
+		.grid_1,
+		.grid_2,
+		.grid_3,
+		.grid_4,
+		.grid_5,
+		.grid_6,
+		.grid_7,
+		.grid_8,
+		.grid_9,
+		.grid_10,
+		.grid_11,
+		.grid_12,
+		.grid_13,
+		.grid_14,
+		.grid_15,
+		.grid_16 {
+		  display: inline;
+		  float: left;
+		  margin-left: 10px;
+		  margin-right: 10px;
+		}
+		
+		h1, h2, p {
+			float: left;
+			clear: both;
+			padding: 0.5em;
+		}
+
+		h1.blue, h2.blue, p.blue {
+			display: inline-block;
+			background-color: deepskyblue;
+			color: darkslategrey;
+			padding: 10px;
+			font-size: 2em 3em;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+		}
+		
+		p.blue {
+			background-color: darkturquoise;
+		}
+
+		ul, button {
+			display: inline-block;
+			float: left;
+			clear: both;
+		}
+
+		ul li a {
+			color: white;
+		}
+		ul li.active {
+
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+			background-color: crimson;
+			color: firebrick;
+			padding: 1em 2em;
+
+		}
+		
+
+		.container {
+			display: inline-block;
+			float: left;
+			clear: both;
+		}
+	</style>
+	
+	<style>
+		.color {
+			color: red;
+		}
+	</style>
+	
+	<script src="../../report/assets/jquery-3.1.1.min.js"></script>
+	<script src="../js/test1.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="../js/test2.js" type="text/javascript" charset="utf-8" async defer></script>
+
+</head>
+<body>
+	
+	<h1>Hello</h1>
+	<h2>World!</h2>
+
+	<p>Hello from the other side</p>
+	
+	<div class="test-1">test-1</div>
+	
+	<div id="test1">test1</div>
+	<br>
+	<ul>
+		<li class="item link-1 active">
+			<a href="#">Test link 1</a>
+		</li>
+		<li class="item link-2">
+			<a href="#">Test link 2</a>
+		</li>
+	</ul>
+	<br>
+	<button>CLICK ME</button>
+	
+
+	<div class="container">
+	  <div class="hello">Hello</div>
+	  <div class="goodbye">Goodbye</div>
+	</div>
+
+</body>
+</html>

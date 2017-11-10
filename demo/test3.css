@@ -1,0 +1,104 @@
+.lists {
+
+  list-style-type: disc;
+  list-style-position: inside!important;
+  list-style-image: url('dot.jpg');
+}
+
+a:focus {
+    outline: -webkit-focus-ring-color auto!important;
+    outline-offset: -2px
+}
+
+.welcome .header .header-background.background-p-1 {
+    background: url(https://storage.googleapis.com/sale_spot_pub_usc/ui/images/backgrounds/shopping/bk_1.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.sale-item .sale-item-name,
+.sale-item h1.sale-item-name {
+    color: #000;
+    font-size: 1.2em!important;
+    margin: 0!important;
+    font-family: ubuntu!important;
+    font-weight: lighter!important;
+    text-align: left;
+    display: block
+}
+
+.clock.clock-dark .hours,
+.clock.clock-dark .minutes,
+.clock.clock-dark .seconds {
+    background: #000
+}
+
+.base .left-panel {
+    position: fixed;
+    top: 0;
+    left: -276px;
+    width: 276px;
+    height: 100%;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 3;
+    background-color: #333!important;
+    -webkit-transition: background-image .3s cubic-bezier(.55, 0, .1, 1);
+    -o-transition: background-image .3s cubic-bezier(.55, 0, .1, 1);
+    transition: background-image .3s cubic-bezier(.55, 0, .1, 1);
+    background-repeat: repeat
+}
+
+input[type=checkbox]:focus,
+input[type=file]:focus,
+input[type=radio]:focus {
+    outline: -webkit-focus-ring-color auto;
+    outline-offset: -2px
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: -webkit-focus-ring-color auto;
+    outline-offset: -2px
+}
+
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    -webkit-appearance: none
+}
+
+.modal {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    background-clip: padding-box;
+    outline: 0
+}

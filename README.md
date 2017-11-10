@@ -1,44 +1,23 @@
-css-purge
+
+#CSS-PURGE
 =========
 
-A command line Node JS app built on [css-parse](https://github.com/visionmedia/css-parse) that allows you to remove duplicate CSS rules and or properties in a .css file.
+**V2 - We just released our greatest version!**
+
+# A CSS tool written in Node JS as a command line app or library for the purging, burning, reducing, shortening, compressing, cleaning, trimming and formatting of duplicate, extra, excess or bloated CSS.
 
 
-Install
------
-
-    $ npm install css-purge -g
-
-
-Usage
------
-
-	$ css-purge -i style.css -o style_purged.css
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/hk9VCzNc1zBFUjz199QkUU5q/rbtech/css-purge'>
+  <img alt='Sponsor' width='100%' src='https://app.codesponsor.io/embed/hk9VCzNc1zBFUjz199QkUU5q/rbtech/css-purge.svg' />
+</a>
 
 
-Help
------
-
-    $ css-purge --help
-
-
-
-For CSS-Purge Devs
------
-	
-	1. Install dependencies
-	$ npm install
-
-	2. Local execution
-	$ node bin/css-purge -i style.css -o style_purged.css
+## [Website - Where you can find all ya need to know](http://rbtech.github.io/css-purge)
 
 
 Plugins!
 -----
-If you're a plugin dev, just create an issue, then we'll add ya to the list.
-
-[Plugins List](https://github.com/rbtech/css-purge/wiki/Plugins)
-
+We will list them all here as they come.
 
 
 License
@@ -46,7 +25,7 @@ License
 
 (The MIT License)
 
-Copyright (c) 2012 Andrew Quan &lt;AndrewQ@RedBlueprint.com&gt;
+Copyright (c) 2012 Andrew Quan <AndrewQ@RedBlueprint.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

@@ -1,0 +1,146 @@
+/*****  Media Query Hacks  ******/
+/* Ref: http://browserhacks.com */
+
+/*Internet Explorer/Edge ≥ 9   Safari 4   Android ≥ 2.3 */
+@media screen and (min-width:0\0) {
+	
+  body {
+    background-color: red;
+  }
+}
+
+
+
+/*Chrome 22-28   Safari ≥ 7 */
+@media \\0 screen {
+	
+  body {
+    background-color: red;
+  }
+}
+
+/*Chrome ≥ 29   Opera ≥ 16 */
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
+	
+  body {
+    background-color: red;
+  }
+}
+
+
+
+/*Firefox ≤ 3 */
+@media \0 all {
+	
+  body {
+    background-color: red;
+  }
+}
+
+/*Firefox ≥ 3.6 */
+@media screen and (-moz-images-in-menus:0) {
+	
+  body {
+    background-color: red;
+  }
+}
+
+/*Firefox ≥ 4 */
+@media screen and (min--moz-device-pixel-ratio:0) {
+	
+  body {
+    background-color: red;
+  }
+}
+
+/*Firefox ≥ 8 */
+@media all and (min--moz-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+	
+  body {
+    background-color: red;
+  }
+}
+@media all and (-moz-images-in-menus:0) and (min-resolution: .001dpcm) {
+	
+  body {
+    background-color: red;
+  }
+}
+
+/*Firefox ≥ 11 */
+@media all and (min--moz-device-pixel-ratio:0) { 
+	@media (min-width: 0px) {
+	  body {
+	    background-color: red;
+	  }
+	} 
+}
+@media all and (-moz-images-in-menus:0) { 
+	@media (min-width: 0px) {	
+	  body {
+	    background-color: red;
+	  }
+	} 
+}
+
+/*Firefox ≥ 29 */
+@media all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm) {
+  body {
+    background-color: red;
+  }
+}
+
+
+
+/*Internet Explorer/Edge ≤ 7 */
+@media screen\9 {
+	
+  body {
+    background-color: red;
+  }
+}
+
+/*Internet Explorer/Edge ≤ 8 */
+@media \0screen\,screen\9 {
+	
+  body {
+    background-color: red;
+  }
+}
+
+/*Internet Explorer/Edge 8 */
+@media \0screen {
+	
+  body {
+    background-color: red;
+  }
+}
+
+/*Internet Explorer/Edge ≥ 10 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	
+  body {
+    background-color: red;
+  }
+}
+
+/*Everything but Internet Explorer and Safari ≤6 */
+/*Internet Explorer/Edge *   Safari ≤ 6 */
+@media screen { 
+	@media (min-width: 0px) {
+	  body {
+	    background-color: red;
+	  }
+	} 
+}
+
+
+
+/*Opera ≥ 12 */
+@media (min-resolution: .001dpcm) { 
+	_:-o-prefocus, 
+  body {
+    background-color: red;
+  }
+}
+

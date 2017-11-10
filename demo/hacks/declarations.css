@@ -1,0 +1,93 @@
+/*****  Declaration Hacks  ******/
+/* Ref: http://browserhacks.com */
+/* 
+	 Remember: to remove duplicate 
+	 declarations, just add them to 
+	 "declaration_names" in
+	 config_reduce_declarations.json
+
+	 e.g. "declaration_names" : [
+		"_color",
+		"-color",
+		"!color"
+	 ]
+	 
+	 Only works for hacks we 
+	 process/optimize.
+*/
+
+
+/*Internet Explorer/Edge 6 */
+.selector { 
+	_color: skyblue;
+	_color: red; 
+}
+.selector { 
+	-color: skyblue; 
+	-color: red; 
+}
+
+/*Internet Explorer/Edge 6-8 */
+.selector { color: skyblue\9; }
+.selector { color/*\**/: skyblue\9; }
+
+/*Acts as an !important; string after ! can be anything */
+/*Internet Explorer/Edge ≤ 7 */
+.selector { color: skyblue !ie; }
+
+
+
+
+/*Chrome ≤ 28   Safari ≤ 7   Opera ≥ 14 */
+/*We dont currently process/optimize this type of hack */
+.selector { (;color: skyblue;); }
+.selector { [;color: skyblue;]; }
+
+.selector { (;border: 1px solid white;); }
+.selector { [;border: 1px solid white;]; }
+
+.selector { 
+	(;
+		font-weight: bold;
+		font-family: arial, helvetica, sans-serif;
+		font-size: 1.5em;
+	);
+}
+.selector { 
+	[;
+		font-weight: bold;
+		font-family: arial, helvetica, sans-serif;
+		font-size: 1.5em;
+	]; 
+}
+/*End - We dont currently process/optimize this type of hack */
+
+
+
+
+
+/*Any combination of these characters: ! $ & * ( ) = % + @ , . / ` [ ] # ~ ? : < > | */
+/*Internet Explorer/Edge ≤ 7 */
+/*We dont currently process/optimize this type of hack */
+.selector { !color: skyblue; }
+.selector { !color: skyblue; }
+.selector { $color: skyblue; }
+.selector { &color: skyblue; }
+.selector { *color: skyblue; }
+.selector { )color: skyblue; }
+.selector { =color: skyblue; }
+.selector { %color: skyblue; }
+.selector { +color: skyblue; }
+.selector { @color: skyblue; }
+.selector { ,color: skyblue; }
+.selector { .color: skyblue; }
+.selector { /color: skyblue; }
+// .selector { `color: skyblue; }
+.selector { ]color: skyblue; }
+.selector { #color: skyblue; }
+.selector { ~color: skyblue; }
+.selector { ?color: skyblue; }
+.selector { :color: skyblue; }
+.selector { |color: skyblue; }
+/*End - We dont currently process/optimize this type of hack */
+

@@ -1,0 +1,107 @@
+{
+    "file_output": "purged.min.css",
+
+
+    "input_files": "demo/test1.css",
+    "input_files": "demo/test1.css, demo/test2.css",
+    "input_files": "demo/test1.css, demo/test2.css, demo/test3.css, demo/test4.css",
+	"input_files": "demo/test1.css, demo/css_folder",
+	"input_files": ["demo/test1.css", "demo/css_folder", "demo/libs/bootstrap4.css"],
+    "input_files": "demo/libs/960.css",
+    "input_files": "demo/libs/animate.css",
+    "input_files": "demo/libs/blueprint",
+    "input_files": "demo/libs/bootstrap3.css",
+    "input_files": "demo/libs/bootstrap4.css",
+    "input_files": "demo/libs/font-awesome.css",
+    "input_files": "demo/libs/foundation.css",
+    "input_files": "demo/libs/gumby.css",
+    "input_files": "demo/libs/inuitV6.css",
+    "input_files": "demo/libs/normalize.css",
+    "input_files": "demo/libs/oocss",
+    "input_files": "demo/libs/pure.css",
+    "input_files": "demo/libs/reset.css",
+    "input_files": "http://localhost:4000/assets/main.css",
+    "input_files": [
+        "demo/html/static-jekyll/_site/assets/main.css",
+        "demo/libs/bootstrap4.css"
+    ],
+    "input_files": "demo/html/static-jekyll/_site/assets/main.css",
+
+
+    
+    "input_html_files": "demo/html/test1.html",
+    "input_html_files": "http://localhost:4000",
+    "input_html_files": [
+        "http://localhost:4000/index.html",
+        "http://localhost:4000/jekyll/update/2017/10/17/welcome-to-jekyll.html",
+        "http://localhost:4000/about/"
+    ],
+    "input_html_files": "demo/html/static-jekyll/_site",
+
+
+
+
+	"options": {
+		"trim": true,
+        "trim_keep_non_standard_inline_comments": false,
+        "trim_removed_rules_previous_comment": true,
+		"trim_comments": false,
+        "trim_whitespace": false,
+        "trim_breaklines": false,
+        "trim_last_semicolon": false,
+
+        "shorten": true,
+        "shorten_zero": false,
+        "shorten_hexcolor": false,
+        "shorten_hexcolor_extended_names": false,
+        "shorten_hexcolor_UPPERCASE": false,
+        "shorten_font": false,
+        "shorten_background": false,
+        "shorten_background_min": 2,
+        "shorten_margin": false,
+        "shorten_padding": false,
+        "shorten_list_style": false,
+        "shorten_outline": false,
+        "shorten_border": false,
+        "shorten_border_top": false,
+        "shorten_border_right": false,
+        "shorten_border_bottom": false,
+        "shorten_border_left": false,
+        "shorten_border_radius": false,
+
+        "format": true,
+        "format_font_family": true,
+        "format_4095_rules_legacy_limit": false,
+
+        "special_convert_rem": false,
+        "special_convert_rem_browser_default_px": "16",
+        "special_convert_rem_desired_html_px": "10",
+        "special_convert_rem_font_size": true,
+
+        "special_reduce_with_html" : false,
+        "special_reduce_with_html_ignore_selectors" : [
+            "@-ms-",
+            ":-ms-",
+            "::",
+            ":valid",
+            ":invalid",
+            "+.",
+            ":-"
+        ],
+
+        "generate_report": true,
+        "verbose": true,
+
+        "bypass_media_rules": true,
+        "bypass_document_rules": false,
+        "bypass_supports_rules": false,
+        "bypass_page_rules": false,
+        "bypass_charset": false
+	},
+
+	"zero_units": "em, ex, %, px, cm, mm, in, pt, pc, ch, rem, vh, vw, vmin, vmax",
+
+    "report_file_location": "purged_css_report_data.json",
+
+    "reduce_declarations_file_location": "config_reduce_declarations.json"
+}

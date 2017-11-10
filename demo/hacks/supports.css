@@ -1,0 +1,78 @@
+/*****    Supports Hacks   ******/
+/* Ref: http://browserhacks.com */
+
+
+/*Chrome ≥ 28   Safari ≥ 9   Internet Explorer/Edge >= 12   Opera ≥ 14 */
+@supports (-webkit-appearance:none) {
+  body {
+    background-color: red;
+  }
+}
+
+
+/*Firefox ≥ 16 */
+@supports (-moz-appearance:meterbar) {
+  body {
+    background-color: red;
+  }
+ }
+
+/*Firefox ≥ 22 */
+@supports (-moz-appearance:meterbar) and (display:flex) {
+  body {
+    background-color: red;
+  }
+}
+
+/*Firefox ≥ 24 */
+@supports (-moz-appearance:meterbar) and (cursor:zoom-in) {
+  body {
+    background-color: red;
+  }
+}
+
+/*Firefox ≥ 25 */
+@supports (-moz-appearance:meterbar) and (background-attachment:local) {
+  body {
+    background-color: red;
+  }
+}
+
+/*Firefox ≥ 26 */
+@supports (-moz-appearance:meterbar) and (image-orientation:90deg) {
+  body {
+    background-color: red;
+  }
+}
+
+/*Firefox ≥ 27 */
+@supports (-moz-appearance:meterbar) and (all:initial) {
+  body {
+    background-color: red;
+  }
+}
+
+/*Firefox ≥ 28 */
+@supports (-moz-appearance:meterbar) and (list-style-type:japanese-formal) {
+  body {
+    background-color: red;
+  }
+}
+
+/*Firefox ≥ 30 */
+@supports (-moz-appearance:meterbar) and (background-blend-mode:difference,normal) {
+  body {
+    background-color: red;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+/***** Miscellaneous Hacks ******/
+/* Ref: http://browserhacks.com */
+
+@-moz-document url-prefix() {
+	
+  body {
+    background-color: red;
+  }
+}

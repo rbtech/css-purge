@@ -1,3 +1,10 @@
+2.0.0 / 2017-11-10
+===================
+
+	* Major Release
+	Find out more on the [website](http://rbtech.github.io/css-purge)
+	
+
 1.1.1 / 2014-05-15
 ===================
 

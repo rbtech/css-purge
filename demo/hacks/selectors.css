@@ -1,0 +1,104 @@
+/*****    Selector Hacks   ******/
+/* Ref: http://browserhacks.com */
+
+/*  Android *, Chrome *, Safari *, Opera ≥ 14  */
+.selector:not(*:root) { background-color: red; }
+
+
+
+
+/*  Firefox 1.5/2  */
+body:empty .selector { background-color: red; }
+
+/*  Firefox ≥ 2  */
+body:last-child .selector, x:-moz-any-link { background-color: red; }
+
+/*  Firefox ≥ 3   */
+body:last-child .selector, x:-moz-any-link, x:default { background-color: red; }
+
+/*  Firefox ≥ 3.5  */
+body:not(:-moz-handler-blocked) .selector { background-color: red; }
+
+/*  Firefox ≥ 6  */
+_::-moz-progress-bar, body:last-child .selector { background-color: red; }
+
+/*  Firefox ≥ 21  */
+_::-moz-range-track, body:last-child .selector { background-color: red; }
+
+/*  Firefox *  */
+_:-moz-tree-row(hover), .selector { background-color: red; }
+
+/*  Everything but Firefox and Internet Explorer ≤8  */
+_::selection, .selector:not([attr*='']) { background-color: red; }
+
+
+
+
+/*  Internet Explorer/Edge ≤ 6  */
+* html .selector  { background-color: red; }
+/*  .unused-class can be any unused class  */
+.unused-class.selector { background-color: red; }
+
+/*  Internet Explorer/Edge ≤ 7  */
+.selector, { background-color: red; }
+
+/*  Internet Explorer/Edge ≤ 7  */
+.selector\ { background-color: red; }
+
+/*  Everything but Internet Explorer 6  */
+/*  Internet Explorer/Edge 6  */
+html > body .selector { background-color: red; }
+
+/*  Internet Explorer/Edge 7  */
+*:first-child+html .selector { background-color: red; }
+.selector, x:-IE7 { background-color: red; }
+*+html .selector { background-color: red; }
+body*.selector { background-color: red; }
+
+/*  Everything but Internet Explorer ≤7  */
+/*  Internet Explorer/Edge ≤ 7  */
+html > /**/ body .selector { background-color: red; }
+head ~ /**/ body .selector { background-color: red; }
+
+/*  Everything but Internet Explorer ≤8  */
+/*  Internet Explorer/Edge ≤ 8  */
+:root .selector { background-color: red; }
+body:last-child .selector { background-color: red; }
+body:nth-of-type(1) .selector { background-color: red; }
+body:first-of-type .selector { background-color: red; }
+.selector:not([attr*='']) { background-color: red; }
+
+/*  Internet Explorer/Edge ≥ 10  */
+_:-ms-input-placeholder, :root .selector { background-color: red; }
+
+/*  Internet Explorer/Edge ≥ 11  */
+_:-ms-fullscreen, :root .selector { background-color: red; }
+
+
+
+
+/*  Opera ≤ 9.27, Safari 2  */
+html:first-child .selector { background-color: red; }
+
+/*  Opera ≥ 9.5  */
+_:-o-prefocus, body:last-child .selector { background-color: red; }
+
+/*  Opera ≤ 11  */
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) { .test { background-color: red; } }
+
+/*  Opera 9.25, Safari 2/3.1  */
+*|html[xmlns*=""] .selector { background-color: red; }
+
+
+
+
+/*  Safari 2-3  */
+html[xmlns*=""] body:last-child .selector { background-color: red; }
+html[xmlns*=""]:root .selector  { background-color: red; }
+
+/*  Safari 5.1-6  */
+_::-moz-svg-foreign-content, :root .selector { background-color: red; }
+
+
+
+
