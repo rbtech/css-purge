@@ -12,7 +12,10 @@ CSS-PURGE
 </a>
 
 
-## [Official website - where you can find all ya need to know](http://rbtech.github.io/css-purge)
+[![Website](http://rbtech.github.io/css-purge/assets/images/css_purge_report.jpg)](http://rbtech.github.io/css-purge)
+
+
+[![Visit Website](http://rbtech.github.io/css-purge/assets/images/visit_website.jpg)](http://rbtech.github.io/css-purge)
 
 
 Plugins!
