@@ -12,10 +12,10 @@ CSS-PURGE
 </a>
 
 
-<a href="http://rbtech.github.io/css-purge" target="_blank"><img src="http://rbtech.github.io/css-purge/assets/images/css_purge_report.jpg" alt="Report Preview"></a>
+[![Report Preview](http://rbtech.github.io/css-purge/assets/images/css_purge_report.jpg)](http://rbtech.github.io/css-purge)
 
 
-<a href="http://rbtech.github.io/css-purge" target="_blank"><img src="http://rbtech.github.io/css-purge/assets/images/visit_website.jpg" alt="Visit Website"></a>
+[![Visit Website](http://rbtech.github.io/css-purge/assets/images/visit_website.jpg)](http://rbtech.github.io/css-purge)
 
 
 Plugins!
