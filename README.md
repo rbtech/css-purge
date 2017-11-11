@@ -4,7 +4,7 @@ CSS-PURGE
 
 **V2 - We just released our greatest version yet!**
 
-# A CSS tool written in Node JS as a command line app or library for the purging, burning, reducing, shortening, compressing, cleaning, trimming and formatting of duplicate, extra, excess or bloated CSS.
+## A CSS tool written in Node JS as a command line app or library for the purging, burning, reducing, shortening, compressing, cleaning, trimming and formatting of duplicate, extra, excess or bloated CSS.
 
 
 <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/hk9VCzNc1zBFUjz199QkUU5q/rbtech/css-purge'>
@@ -28,7 +28,7 @@ License
 
 (The MIT License)
 
-Copyright (c) 2017 Red Blueprint Technologies
+Copyright (c) 2017 [Red Blueprint Technologies](http://redblueprint.com)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
