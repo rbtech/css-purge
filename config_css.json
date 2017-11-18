@@ -1,10 +1,7 @@
 {
 	"options": {
-        "file_output": "purged.min.css",
 
-        "input_files": "demo/test1.css",
-        
-        "input_html_files": "demo/html/test1.html",
+        "css_output": "purged.min.css",
 
 		"trim": true,
         "trim_keep_non_standard_inline_comments": false,

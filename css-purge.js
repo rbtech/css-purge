@@ -9,10 +9,8 @@ var info = clc.xterm(123);
 var warn = clc.yellow;
 var logoRed = clc.xterm(197);
 
-// var defaultOutputfilename = "default_output.css";
-
 program
-	.version('2.0.8')
+	.version('3.0.0')
 	.option('-c, --cssinput - CSS <the css>', 'The CSS to purge')
 	.option('-i, --input - CSS file(s) <input filenames, foldernames or url>', 'The CSS file(s) to parse')
 	.option('-m, --inputhtml - HTML file(s) <input html filenames, foldernames or url>', 'The HTML file(s) to parse for CSS')
@@ -23,33 +21,42 @@ program
 	.parse(process.argv);
 
 
-// console.log(program.shorten)
-// console.log(true)
 if (program.cssinput) {
 
 	if (program.output) {
-		console.log(cssPurge.purgeCSS(program.cssinput, {
+		cssPurge.purgeCSS(program.cssinput, {
+			css_output: program.output,
 			trim : true,
 			shorten : true,
 			verbose : (program.verbose) ? true : false
-		}));
+		}, function(error, result){
+			if (error)
+				console.log(error)
+			else
+				console.log(result);
+		});
 	} else {
-		console.log(cssPurge.purgeCSS(program.cssinput, {
+		cssPurge.purgeCSS(program.cssinput, {
 			trim : true,
 			shorten : true,
 			verbose : (program.verbose) ? true : false
-		}));
+		}, function(error, result){
+			if (error)
+				console.log(error)
+			else
+				console.log(result);
+		});
 	}
 
 } else if (program.input && program.inputhtml && program.output) {
 	cssPurge.purgeCSSFiles(
-		program.input, 
-		program.inputhtml, 
 		{
-			file_output: program.output,
+			css: program.input,
+			css_output: program.output,
 			trim : true,
 			shorten : true,
 			special_reduce_with_html: true,
+			html: program.inputhtml,
 			verbose : (program.verbose) ? true : false
 		}, 
 		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
@@ -58,13 +65,13 @@ if (program.cssinput) {
 
 } else if (program.input && program.inputhtml) {
 	cssPurge.purgeCSSFiles(
-		program.input, 
-		program.inputhtml, 
 		{
-			file_output: program.input.substr(0, program.input.lastIndexOf('.')) + '.min.css',
+			css: program.input,
+			css_output: program.input.substr(0, program.input.lastIndexOf('.')) + '.min.css',
 			trim : true,
 			shorten : true,
 			special_reduce_with_html: true,
+			html: program.inputhtml,
 			verbose : (program.verbose) ? true : false
 		}, 
 		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
@@ -73,10 +80,9 @@ if (program.cssinput) {
 
 } else if (program.input && program.output) {
 	cssPurge.purgeCSSFiles(
-		program.input, 
-		null, 
 		{
-			file_output: program.output,
+			css: program.input,
+			css_output: program.output,
 			trim : true,
 			shorten : true,
 			verbose : (program.verbose) ? true : false
@@ -86,10 +92,9 @@ if (program.cssinput) {
 } else if (program.input) {
 
 	cssPurge.purgeCSSFiles(
-		program.input, 
-		null, 
 		{
-			file_output: program.input.substr(0, program.input.lastIndexOf('.')) + '.min.css',
+			css: program.input,
+			css_output: program.input.substr(0, program.input.lastIndexOf('.')) + '.min.css',
 			trim : true,
 			shorten : true,
 			verbose : (program.verbose) ? true : false
@@ -97,7 +102,7 @@ if (program.cssinput) {
 		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
 	);
 } else if (program.customconfig) {
-	cssPurge.purgeCSSFiles(null, null, null, '' + program.customconfig);
+	cssPurge.purgeCSSFiles(null, '' + program.customconfig);
 } else if (program.defaultconfig) {
 	cssPurge.purgeCSSFiles();
 } else {

@@ -89,7 +89,7 @@ $(function(){
 	});
 
 	//global
-	$('#submenuBtn1').on('click', function(){
+	$('#submenuBtn1, .globalLink').on('click', function(){
 
 		getStartedTab.click(); 
 
@@ -99,7 +99,7 @@ $(function(){
 
 	});
 	//local
-	$('#submenuBtn2').on('click', function(){
+	$('#submenuBtn2, .localLink').on('click', function(){
 
 		getStartedTab.click(); 
 
@@ -109,7 +109,7 @@ $(function(){
 
 	});
 	//library
-	$('#submenuBtn3').on('click', function(){
+	$('#submenuBtn3, .libraryLink').on('click', function(){
 
 		getStartedTab.click(); 
 

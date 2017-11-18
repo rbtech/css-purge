@@ -151,7 +151,7 @@
 
 						<br>
 						<br>
-
+						
             <h4>Under the hood</h4>
 
 						<p>This is what the engine is doing in a nutshell. We have currently categorized everything that we do into a few core groups:</p>
@@ -294,9 +294,9 @@
 							
 							<h4>3 Ways to Use CSS-PURGE</h4>
 							<ol>
-								<li>Global</li>
-								<li>Local</li>
-								<li>Library</li>
+								<li><a class="globalLink" href="#getStarted">Global</a></li>
+								<li><a class="localLink" href="#getStarted">Local</a></li>
+								<li><a class="libraryLink" href="#getStarted">Library</a></li>
 							</ol>
 
 					    <br>
@@ -478,40 +478,57 @@ node css-purge -i "main.css, framework.css" -o main.min.css -m "index.html, http
 							<br>
 							<h6>Some example usage:</h6>
 							<pre><code class="hljs javascript">
-  const cssPurge = require('css-purge');
+  var cssPurge = require('css-purge');
   
-  //default settings are in the config files
+  //purging a CSS string with options
+  var css = "p { color: blue; color: blue; } ";
+
+  cssPurge.purgeCSS(css, {
+    trim : true,
+    shorten : true
+  }, function(error, result){
+    if (error)
+      console.log(error)
+    else
+      console.log('Output CSS: ',  result);
+  });
+
+
+  //uses default settings that are set in the config file
+  //make sure that input_files is set
   cssPurge.purgeCSSFiles();
   
   //purging a CSS file
-  cssPurge.purgeCSSFiles('demo/test1.css');
+  cssPurge.purgeCSSFiles({ 
+    input_files:'demo/test1.css' 
+  });
   
   //purging a CSS file with HTML
-  cssPurge.purgeCSSFiles('demo/test1.css', 'demo/html/test1.html');
+  cssPurge.purgeCSSFiles({
+    input_files: 'demo/test1.css', 
+    input_html_files: 'demo/html/test1.html'
+  });
   
   //purging a CSS file with HTML and options
-  cssPurge.purgeCSSFiles('demo/test1.css', 'demo/html/test1.html', {
-  	trim : true,
-  	shorten : true,
-  	verbose : true
+  cssPurge.purgeCSSFiles({
+    input_files: 'demo/test1.css', 
+    input_html_files: 'demo/html/test1.html',
+    trim : true,
+    shorten : true,
+    verbose : true
   });
   
   //purging a CSS file with HTML, options and config
-  cssPurge.purgeCSSFiles('demo/test1.css', 'demo/html/test1.html', {
-  	trim : true,
-  	shorten : true,
-  	verbose : true },
-  	'myconfig.json'
+  cssPurge.purgeCSSFiles({
+      input_files: 'demo/test1.css', 
+      input_html_files: 'demo/html/test1.html',
+      trim : true,
+      shorten : true,
+      verbose : true
+    },
+    'myconfig.json'
   );
 
-  //purging CSS with options
-  var css = "p { color: blue; color: blue; }";
-  console.log(
-    cssPurge.purgeCSS(css, {
-  	trim : true,
-  	shorten : true
-    })
-  );
 							</code></pre>
 
 	
