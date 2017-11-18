@@ -495,24 +495,25 @@ node css-purge -i "main.css, framework.css" -o main.min.css -m "index.html, http
 
 
   //uses default settings that are set in the config file
-  //make sure that input_files is set
+  //make sure that css is set
   cssPurge.purgeCSSFiles();
   
   //purging a CSS file
   cssPurge.purgeCSSFiles({ 
-    input_files:'demo/test1.css' 
+    css:'demo/test1.css' 
   });
   
   //purging a CSS file with HTML
   cssPurge.purgeCSSFiles({
-    input_files: 'demo/test1.css', 
-    input_html_files: 'demo/html/test1.html'
+    css: 'demo/test1.css', 
+    html: 'demo/html/test1.html'
   });
   
   //purging a CSS file with HTML and options
   cssPurge.purgeCSSFiles({
-    input_files: 'demo/test1.css', 
-    input_html_files: 'demo/html/test1.html',
+    css_output: 'test1.min.css',
+    css: 'demo/test1.css', 
+    html: 'demo/html/test1.html',
     trim : true,
     shorten : true,
     verbose : true
@@ -520,8 +521,9 @@ node css-purge -i "main.css, framework.css" -o main.min.css -m "index.html, http
   
   //purging a CSS file with HTML, options and config
   cssPurge.purgeCSSFiles({
-      input_files: 'demo/test1.css', 
-      input_html_files: 'demo/html/test1.html',
+      css_output: 'test1.min.css',
+      css: 'demo/test1.css', 
+      html: 'demo/html/test1.html',
       trim : true,
       shorten : true,
       verbose : true
@@ -617,10 +619,10 @@ node css-purge -i "main.css, framework.css" -o main.min.css -m "index.html, http
 							<pre><code class="hljs json">
 {
   "options": {
-    "file_output": "purged.min.css",
-    "input_files": "demo/html/static-jekyll/_siteassets/main.css",
+    "css_output": "purged.min.css",
+    "css": "demo/html/static-jekyll/_siteassets/main.css",
     
-    "input_html_files": "demo/html/static-jekyll/_site",
+    "html": "demo/html/static-jekyll/_site",
     
     "trim": true,
     "trim_keep_non_standard_inline_comments": false,
@@ -702,7 +704,7 @@ node css-purge -i "main.css, framework.css" -o main.min.css -m "index.html, http
   <tbody>
     <tr>
       <td>
-	      file_output
+	      css_output
 	    </td>
       <td>
 	      The name of the CSS file to output as.
@@ -710,7 +712,7 @@ node css-purge -i "main.css, framework.css" -o main.min.css -m "index.html, http
     </tr>
     <tr>
       <td>
-      	input_files
+      	css
       </td>
       <td>
       	CSS file(s) to be processed. 
@@ -720,7 +722,7 @@ node css-purge -i "main.css, framework.css" -o main.min.css -m "index.html, http
     </tr>
     <tr>
       <td>
-      	input_html_files
+      	html
       </td>
       <td>
       	HTML file(s) to be searched for CSS that is used.
