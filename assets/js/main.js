@@ -152,6 +152,10 @@ $(function(){
 
 	var token = "EETIPcM4wPVlWpWFnY2SLw";
 
+	if (document.domain.indexOf('npm') != -1) {
+		token = "tZWUuWEjGuwxBevlNrkMvg";
+	}
+
 	$(".cs__footer a").attr("href", "https://codesponsor.io/?utm_source=widget&utm_medium=banner&utm_campaign=" + token);
 	$.ajax({
 	  url: "https://app.codesponsor.io/p/" + token + "/message.json",
