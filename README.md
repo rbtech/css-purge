@@ -7,11 +7,6 @@ CSS-PURGE
 ## A CSS tool written in Node JS as a command line app or library for the purging, burning, reducing, shortening, compressing, cleaning, trimming and formatting of duplicate, extra, excess or bloated CSS.
 
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/hk9VCzNc1zBFUjz199QkUU5q/rbtech/css-purge'>
-  <img alt='Sponsor' width='100%' src='https://app.codesponsor.io/embed/hk9VCzNc1zBFUjz199QkUU5q/rbtech/css-purge.svg' />
-</a>
-
-
 [![Report Preview](http://rbtech.github.io/css-purge/assets/images/css_purge_report.jpg)](http://rbtech.github.io/css-purge)
 
 
