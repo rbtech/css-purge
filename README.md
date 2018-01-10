@@ -17,6 +17,7 @@ Plugins!
 -----
 
 - [gulp-css-purge](https://github.com/rbtech/gulp-css-purge)
+- [grunt-css-purge](https://github.com/dominikwilkowski/grunt-css-purge)
 
 
 We will list them as they come.
