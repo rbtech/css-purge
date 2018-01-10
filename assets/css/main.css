@@ -73,7 +73,7 @@ code {
   position: fixed;
   display: inline-block;
   width: 120px;
-  margin-top: -160px;
+  margin-top: 20px;
 
   background-color: white;
   border-radius: 4px;
