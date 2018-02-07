@@ -18,6 +18,7 @@ Plugins!
 
 - [gulp-css-purge](https://github.com/rbtech/gulp-css-purge)
 - [grunt-css-purge](https://github.com/dominikwilkowski/grunt-css-purge)
+- [Webpack loader : purge-css-loader](https://github.com/dzianisreznik/purge-css-loader)
 
 
 We will list them as they come.
