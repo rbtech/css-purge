@@ -1,0 +1,30 @@
+.panel {
+	background-color: blue;
+}
+
+.panel {
+	background-color: red;
+}
+
+
+@media (max-width: 400) {
+	
+	.panel {
+		background-color: green;
+	}
+
+	.panel {
+		background-color: red;
+	}
+}
+
+@media (max-width: 400) {
+	
+	.panel {
+		background-color: green;
+	}
+
+	.panel {
+		background-color: red;
+	}
+}

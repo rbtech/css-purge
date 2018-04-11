@@ -1,0 +1,23 @@
+
+.panel {
+	background-color: #FFF;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	margin-bottom: 20px;
+	padding: 20px;
+	clear: both; /*crossed*/
+	background-color: #04003F;
+	position: relative;
+	text-decoration: none;
+	position: relative;
+	padding-bottom: 60px;
+	overflow: hidden;
+	clear: none;
+	overflow: hidden; /*crossed*/
+}
