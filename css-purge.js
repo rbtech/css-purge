@@ -10,7 +10,7 @@ var warn = clc.yellow;
 var logoRed = clc.xterm(197);
 
 program
-	.version('3.0.3')
+	.version('3.0.14')
 	.option('-c, --cssinput - CSS <the css>', 'The CSS to purge')
 	.option('-i, --input - CSS file(s) <input filenames, foldernames or url>', 'The CSS file(s) to parse')
 	.option('-m, --inputhtml - HTML file(s) <input html filenames, foldernames or url>', 'The HTML file(s) to parse for CSS')
@@ -20,27 +20,40 @@ program
 	.option('-v, --verbose - displays internal messages', 'Outputs CSS-PURGE activity')
 	.parse(process.argv);
 
+var options = {};
 
 if (program.cssinput) {
 
 	if (program.output) {
-		cssPurge.purgeCSS(program.cssinput, {
+
+		options = {
 			css_output: program.output,
-			trim : true,
-			shorten : true,
 			verbose : (program.verbose) ? true : false
-		}, function(error, result){
+		};
+
+		if (program.customconfig === undefined) {
+			options.trim = true;
+			options.shorten = true;
+		}
+
+		cssPurge.purgeCSS(program.cssinput, options, function(error, result){
 			if (error)
 				console.log(error)
 			else
 				console.log(result);
 		});
 	} else {
-		cssPurge.purgeCSS(program.cssinput, {
-			trim : true,
-			shorten : true,
+
+		options = {
 			verbose : (program.verbose) ? true : false
-		}, function(error, result){
+		};
+
+		if (program.customconfig === undefined) {
+			options.trim = true;
+			options.shorten = true;
+		}
+
+		cssPurge.purgeCSS(program.cssinput, options, function(error, result){
 			if (error)
 				console.log(error)
 			else
@@ -49,56 +62,79 @@ if (program.cssinput) {
 	}
 
 } else if (program.input && program.inputhtml && program.output) {
+
+	options = {
+		css: program.input,
+		css_output: program.output,
+		special_reduce_with_html: true,
+		html: program.inputhtml,
+		verbose : (program.verbose) ? true : false
+	};
+
+	if (program.customconfig === undefined) {
+		options.trim = true;
+		options.shorten = true;
+	}
+
 	cssPurge.purgeCSSFiles(
-		{
-			css: program.input,
-			css_output: program.output,
-			trim : true,
-			shorten : true,
-			special_reduce_with_html: true,
-			html: program.inputhtml,
-			verbose : (program.verbose) ? true : false
-		}, 
+		options, 
 		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
 	);
 
 
 } else if (program.input && program.inputhtml) {
+
+	options = {
+		css: program.input,
+		css_output: program.input.substr(0, program.input.lastIndexOf('.')) + '.min.css',
+		special_reduce_with_html: true,
+		html: program.inputhtml,
+		verbose : (program.verbose) ? true : false
+	};
+
+	if (program.customconfig === undefined) {
+		options.trim = true;
+		options.shorten = true;
+	}
+
 	cssPurge.purgeCSSFiles(
-		{
-			css: program.input,
-			css_output: program.input.substr(0, program.input.lastIndexOf('.')) + '.min.css',
-			trim : true,
-			shorten : true,
-			special_reduce_with_html: true,
-			html: program.inputhtml,
-			verbose : (program.verbose) ? true : false
-		}, 
+		options, 
 		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
 	);
 
 
 } else if (program.input && program.output) {
+
+	options = {
+		css: program.input,
+		css_output: program.output,
+		verbose : (program.verbose) ? true : false
+	};
+
+	if (program.customconfig === undefined) {
+		options.trim = true;
+		options.shorten = true;
+	}
+
 	cssPurge.purgeCSSFiles(
-		{
-			css: program.input,
-			css_output: program.output,
-			trim : true,
-			shorten : true,
-			verbose : (program.verbose) ? true : false
-		}, 
+		options, 
 		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
 	);
 } else if (program.input) {
 
+	options = {
+		css: program.input,
+		css_output: program.input.substr(0, program.input.lastIndexOf('.')) + '.min.css',
+		verbose : (program.verbose) ? true : false
+	};
+
+	if (program.customconfig === undefined) {
+		options.trim = true;
+		options.shorten = true;
+	}
+
 	cssPurge.purgeCSSFiles(
-		{
-			css: program.input,
-			css_output: program.input.substr(0, program.input.lastIndexOf('.')) + '.min.css',
-			trim : true,
-			shorten : true,
-			verbose : (program.verbose) ? true : false
-		}, 
+		options, 
 		(program.customconfig !== undefined) ? program.customconfig : 'cmd_default'
 	);
 } else if (program.customconfig) {
