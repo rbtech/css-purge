@@ -175,6 +175,8 @@
 
 						<h5>2. Reduce Declarations</h5>
 
+						<p>(New!) Group common declarations into parent selectors.</p>
+
             <p>
             	Group duplicate declarations in root, @media, @document and @supports rules that:
             </p>
@@ -611,6 +613,8 @@ node css-purge -i "main.css, framework.css" -o main.min.css -m "index.html, http
     "css": "demo/html/static-jekyll/_siteassets/main.css",
     
     "html": "demo/html/static-jekyll/_site",
+    
+    "new_reduce_common_into_parent": true,
     
     "trim": true,
     "trim_keep_non_standard_inline_comments": false,
