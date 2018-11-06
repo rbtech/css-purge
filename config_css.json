@@ -3,7 +3,7 @@
 
         "css_output": "purged.min.css",
 
-        "new_reduce_common_into_parent": true,
+        "new_reduce_common_into_parent": false,
 
 		"trim": true,
         "trim_keep_non_standard_inline_comments": false,
