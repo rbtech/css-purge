@@ -268,11 +268,15 @@
 
 							<h5>Purging CSS</h5>
 							<br>
+							<p>This is the typical usage scenario, where you may want to purge some CSS from a file(s) or folder(s) or CSS from your workflow (like from <a href="https://gulpjs.com">gulp</a> or <a href="https://gruntjs.com">grunt</a>).</p>
+							<br>
 	            <img width="95%" src="assets/images/overview1.png" alt="CSS-Purge Overview 1">
 	            <br>
 	            <br>
 	            <br>
 	            <h5>Purging Unused CSS</h5>
+	            <br>
+	            <p>You want to take it a step further by taking your CSS file(s) and reducing it further based on what is used in your HTML file(s).</p>
 	            <br>
 	            <img width="95%" src="assets/images/overview2.png" alt="CSS-Purge Overview 2">
 							<br>
@@ -284,8 +288,8 @@
 							
 							<h4>3 Ways to Use CSS-PURGE</h4>
 							<ol>
-								<li><a class="globalLink" href="#getStarted">Global</a></li>
-								<li><a class="localLink" href="#getStarted">Local</a></li>
+								<li><a class="globalLink" href="#getStarted">CLI App</a></li>
+								<li><a class="localLink" href="#getStarted">Project</a></li>
 								<li><a class="libraryLink" href="#getStarted">Library</a></li>
 							</ol>
 
@@ -293,11 +297,11 @@
 							<p>Required: <a href="https://nodejs.org" target="_blank">Node JS</a></p>
 					    <br>
 
-							<h5 id="headerGlobal">1 - Global</h5>
+							<h5 id="headerGlobal">1 - CLI APP</h5>
 							
 	            <img width="99%" src="assets/images/global_cli_ux.jpg" alt="Global Command Line Interface User Experience or Workflow">
 	            <p style="margin-top:5px;">A typical global workflow</p>
-	            <p>Global usage is nice for doing something quick everywhere.</p>
+	            <p>CLI App usage is nice for doing something quick everywhere.</p>
 	            <br>
 
 
@@ -365,11 +369,11 @@ css-purge -i "main.css, framework.css" -o main.min.css -m "index.html, http://ww
 
 
 
-							<h5 id="headerLocal">2 - Local</h5>
+							<h5 id="headerLocal">2 - Project</h5>
 							
 	            <img width="99%" src="assets/images/local_cli_ux.jpg" alt="Local Command Line Interface User Experience or Workflow">
 	            <p style="margin-top:5px;">A typical local workflow</p>
-	            <p>Local usage is nice for &ldquo;setting up shop&rdquo; for a project.</p>
+	            <p>Project usage is nice for &ldquo;setting up shop&rdquo; for a project.</p>
 	            <br>
 
 							<h6>Clone with <a href="https://git-scm.com" target="_blank">git</a>/<a target="_blank" href="https://desktop.github.com">GitHub Desktop</a>:</h6>
@@ -1132,10 +1136,10 @@ node css-purge -i "main.css, framework.css" -o main.min.css -m "index.html, http
 							  Usage
 							</button>
 							<button id="submenuBtn1" class="mdl-button mdl-js-button mdl-js-ripple-effect">
-							  - Global
+							  - CLI App
 							</button>
 							<button id="submenuBtn2" class="mdl-button mdl-js-button mdl-js-ripple-effect">
-							  - Local
+							  - Project
 							</button>
 							<button id="submenuBtn3" class="mdl-button mdl-js-button mdl-js-ripple-effect">
 							  - Library

@@ -18,13 +18,13 @@ var configTop = 0;
 
 function setTop() {
 
-	overviewTop = $('#headerOverview').offset().top - 40; 
-	usageTop = $('#headerUsage').offset().top - 40; 
-	globalTop = $('#headerGlobal').offset().top - 40; 
-	localTop = $('#headerLocal').offset().top - 40;
-	libraryTop = $('#headerLibrary').offset().top - 40;
-	reportTop = $('#headerReport').offset().top - 40;
-	configTop = $('#headerConfig').offset().top - 40;
+	overviewTop = $('#headerOverview').offset().top - 10; 
+	usageTop = $('#headerUsage').offset().top-10; 
+	globalTop = $('#headerGlobal').offset().top - 10; 
+	localTop = $('#headerLocal').offset().top - 10;
+	libraryTop = $('#headerLibrary').offset().top - 10;
+	reportTop = $('#headerReport').offset().top - 10;
+	configTop = $('#headerConfig').offset().top - 10;
 
 }
 
