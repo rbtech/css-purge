@@ -44,16 +44,16 @@
     "compressing css",
     "cleaning css",
     "trimming css",
-    "formatting css"
+    "formatting css",
+    "unused css",
+    "not used css"
   ],
   "dependencies": {
     "cli-color": "^1.2.0",
     "commander": "^2.15.1",
     "css": "^2.2.3",
-    "express": "^4.16.3",
     "htmlparser2": "^3.9.2",
     "jsdom": "^11.11.0",
-    "opn": "^5.3.0",
     "parse-css-font": "^2.0.2",
     "request": "^2.87.0",
     "through2": "^2.0.3",
