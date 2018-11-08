@@ -134,6 +134,8 @@ Command | Description
 ### Node JS Library Usage
 Libraries help share the awesomeness to more people :)
 
+You can test out the library in your browser [here](https://npm.runkit.com/css-purge).
+
 Install:
 ```
 npm install css-purge --save
