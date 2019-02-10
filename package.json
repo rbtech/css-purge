@@ -49,14 +49,14 @@
     "not used css"
   ],
   "dependencies": {
-    "cli-color": "^1.2.0",
-    "commander": "^2.15.1",
-    "css": "^2.2.3",
-    "htmlparser2": "^3.9.2",
-    "jsdom": "^11.11.0",
+    "cli-color": "^1.4.0",
+    "commander": "^2.19.0",
+    "css": "^2.2.4",
+    "htmlparser2": "^3.10.0",
+    "jsdom": "^11.12.0",
     "parse-css-font": "^2.0.2",
-    "request": "^2.87.0",
-    "through2": "^2.0.3",
+    "request": "^2.88.0",
+    "through2": "^2.0.5",
     "valid-url": "^1.0.9"
   },
   "devDependencies": {}

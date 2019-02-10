@@ -10,6 +10,6 @@
   "author": "Red Blueprint Technologies",
   "license": "MIT",
   "dependencies": {
-    "css-purge": "^3.0.12"
+    "css-purge": "^3.1.6"
   }
 }
