@@ -2,6 +2,7 @@
 var through2 = require('through2');
 var clc = require('cli-color');
 var program = require('commander');
+var pkg = require('./package.json');
 var cssPurge = require('./lib/css-purge');
 
 var error = clc.red.bold;
@@ -10,7 +11,7 @@ var warn = clc.yellow;
 var logoRed = clc.xterm(197);
 
 program
-	.version('3.0.14')
+	.version(pkg.version)
 	.option('-c, --cssinput - CSS <the css>', 'The CSS to purge')
 	.option('-i, --input - CSS file(s) <input filenames, foldernames or url>', 'The CSS file(s) to parse')
 	.option('-m, --inputhtml - HTML file(s) <input html filenames, foldernames or url>', 'The HTML file(s) to parse for CSS')
